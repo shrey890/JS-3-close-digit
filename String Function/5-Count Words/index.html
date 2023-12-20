@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				font-family: sans-serif;
+				text-align: center;
+			}
+
+			#input-field {
+				width: 300px;
+				padding: 10px;
+				border: 1px solid #ccc;
+				margin-bottom: 10px;
+				border-radius: 10px;
+			}
+
+			#word-count {
+				font-weight: bold;
+			}
+			button {
+				padding: 10px;
+				background-color: #dadada;
+				border-radius: 10px;
+				border: 1px solid #ccc;
+			}
+		</style>
+		<title>Document</title>
+	</head>
+	<body>
+		<input
+			type="text"
+			id="input-field"
+			placeholder="Enter your sentence here"
+		/>
+		<button onclick="countWords()">Count Words</button>
+		<p id="word-count"></p>
+		<script src="/String Function/5-Count Words/script.js" defer></script>
+	</body>
+</html>
