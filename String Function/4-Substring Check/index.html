@@ -3,14 +3,56 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				font-family: sans-serif;
+				margin: 20px;
+			}
 
-		<script defer src="/String Function/4-Substring Check/script.js"></script>
+			input[type="text"] {
+				width: 300px;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				margin-bottom: 10px;
+			}
+
+			button {
+				background-color: #4caf50;
+				color: white;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				margin-top: 10px;
+			}
+
+			button:hover {
+				background-color: #388e3c;
+			}
+
+			#result {
+				margin-top: 10px;
+				font-weight: bold;
+			}
+		</style>
 		<title>Document</title>
 	</head>
 	<body>
-		<input type="text" id="main-string" placeholder="Enter Your Word" />
-		<input type="text" id="sub-string" placeholder="Enter Any letter" />
+		<input
+			required
+			type="text"
+			id="main-string"
+			placeholder="Enter Your Word"
+		/>
+		<input
+			required
+			type="text"
+			id="sub-string"
+			placeholder="Enter Any letter"
+		/>
 		<button onclick="checkStr()">Check for substring</button>
 		<p id="result"></p>
+		<script src="/String Function/4-Substring Check/script.js"></script>
 	</body>
 </html>
