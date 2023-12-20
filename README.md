@@ -1,4 +1,4 @@
-#19-12-23(Close Digit)
+# 19-12-23(Close Digit)
 # Array Functions:
 ## Sum of Array:
 Write a function that takes an array of numbers and returns their sum using the reduce method.
