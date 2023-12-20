@@ -1,14 +1,9 @@
 # 19-12-23(Close Digit)
-<<<<<<< HEAD
 
 ## Array Functions:
 
 ### Sum of Array:
 
-=======
-# Array Functions:
-## Sum of Array:
->>>>>>> b1f3ace762593985ba5810c16ae01fe8b39c2a20
 Write a function that takes an array of numbers and returns their sum using the reduce method.
 
 ### Filter Odd Numbers:
