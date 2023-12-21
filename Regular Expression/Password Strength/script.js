@@ -12,6 +12,7 @@ function validate() {
     if (isStrongPassword(password)) {
         errorSpan.textContent = "";
         submitButton.disabled = false;
+
     } else {
         errorSpan.textContent = "Password must be at least 8 characters long, contain uppercase, lowercase, numbers, and special characters.";
         submitButton.disabled = true;

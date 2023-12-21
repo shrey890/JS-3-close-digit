@@ -15,3 +15,8 @@ form.addEventListener('submit', (event) => {
         alert('Please Fill in All Fields')
     }
 })
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", () => {
+    const resultDisplay = document.getElementById("result");
+    resultDisplay.textContent = "";
+});

@@ -1,3 +1,5 @@
+document.getElementById("array-sum-form").classList.remove("js-hide");
+
 function calculateSum(numbers) {
     return numbers.reduce((total, number) => total + Number(number), 0);
 }

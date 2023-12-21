@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<style>
-			body {
-				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-			}
-			#date-form {
-				padding: 30px;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-			}
 
-			label {
-				display: block;
-				margin-bottom: 5px;
-				font-weight: bold;
-			}
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		}
 
-			input[type="text"] {
-				width: 100%;
-				padding: 10px;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-			}
+		#date-form {
+			padding: 30px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
 
-			#date-error-message {
-				color: red;
-				font-weight: bold;
-			}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
 
-			.invalid input[type="text"] {
-				border-color: red;
-			}
+		input[type="date"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
 
-			button[type="submit"] {
-				background-color: #4caf50;
-				color: white;
-				padding: 10px 20px;
-				border: none;
-				border-radius: 5px;
-				cursor: pointer;
-				margin-top: 10px;
-			}
-			button[type="reset"] {
-				background-color: #f44336;
-				padding: 10px 20px;
-				border: none;
-				border-radius: 5px;
-				cursor: pointer;
-				color: white;
-			}
-		</style>
-		<title>Document</title>
-	</head>
-	<body>
-		<form id="date-form">
-			<label for="date">Date:</label>
-			<input type="text" id="date" placeholder="YYYY-MM-DD" />
-			<br />
-			<span id="date-error-message"></span>
-			<br />
-			<button type="submit">Submit</button>
-			<button type="reset">Clear</button>
-		</form>
-		<script src="/Regular Expression/3-Date Format/script.js"></script>
-	</body>
+		#date-error-message {
+			color: red;
+			font-weight: bold;
+		}
+
+		.invalid input[type="text"] {
+			border-color: red;
+		}
+
+		button[type="submit"] {
+			background-color: #4caf50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+
+		button[type="reset"] {
+			background-color: #f44336;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			color: white;
+		}
+	</style>
+	<title>Document</title>
+</head>
+
+<body>
+	<form id="date-form">
+		<label for="date">Date:</label>
+		<input type="date" id="date" placeholder="YYYY-MM-DD" />
+		<br />
+		<span id="date-error-message"></span>
+		<br />
+		<button type="submit">Submit</button>
+		<button type="reset">Clear</button>
+	</form>
+	<script src="/Regular Expression/3-Date Format/script.js"></script>
+</body>
+
 </html>
