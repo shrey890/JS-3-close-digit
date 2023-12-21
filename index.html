@@ -159,6 +159,22 @@
                 display: block;
             }
         }
+
+        .card {
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -187,21 +203,52 @@
                 <a class="dropdown-arrow" href="/">String Functions</a>
                 <ul class="sub-menus">
                     <li>
-                        <a href="/String Function/1-Reverse String/index.html">1-Sum of Array </a>
+                        <a href="/String Function/1-Reverse String/index.html">1-Reverse String</a>
                     </li>
-                    <li><a href="/String Function/2-Count Vowels/index.html">2-Filter odd Number</a></li>
-                    <li><a href="/String Function/3-Capitlize First Letter/index.html">3-Map to Double</a></li>
-                    <li><a href="/String Function/4-Substring Check/index.html">4-Find Max Value</a></li>
-                    <li><a href="/String Function/5-Count Words/index.html">5-Remove Duplicates</a></li>
-                    <li><a href="/String Function/6-Replace Substring/index.html">6-Find Even</a></li>
-                    <li><a href="/String Function/7-Trim Spaces/index.html">7-Calc Average</a></li>
-                    <li><a href="/String Function/8-Convert to Title Case/index.html">8-All Positive</a></li>
+                    <li><a href="/String Function/2-Count Vowels/index.html">2-Count Vowels</a></li>
+                    <li><a href="/String Function/3-Capitlize First Letter/index.html">3-Capitlize</a></li>
+                    <li><a href="/String Function/4-Substring Check/index.html">4-Substring</a></li>
+                    <li><a href="/String Function/5-Count Words/index.html">5-Count Words</a></li>
+                    <li><a href="/String Function/6-Replace Substring/index.html">6-Replace SubString</a></li>
+                    <li><a href="/String Function/7-Trim Spaces/index.html">7-Trim Space</a></li>
+                    <li><a href="/String Function/8-Convert to Title Case/index.html">8-Convert to title case</a></li>
                 </ul>
             </li>
-
-            <li><a href="https://github.com/shrey890/JS-3-close-digit" target="_blank">Repositories</a></li>
+            <li>
+                <a class="dropdown-arrow" href="/">Regular Expressions (Regex)</a>
+                <ul class="sub-menus">
+                    <li><a href="/Regular Expression/1-Email Validation/index.html">1-Email Validation</a></li>
+                    <li><a href="/Regular Expression/2-Phone Number Validation/index.html">2-Phone No. Val</a>
+                    </li>
+                    <li><a href="/Regular Expression/3-Date Format/index.html">3-Date Format </a></li>
+                    <li><a href="/Regular Expression/4-Extract Numbers/index.html">4-Extract Numbers</a></li>
+                    <li><a href="/Regular Expression/Password Strength/index.html">5-Password Strength</a></li>
+                </ul>
+            </li>
+            <li><a href=" https://github.com/shrey890/JS-3-close-digit" target="_blank">Repositories</a></li>
         </ul>
     </nav>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amF2YXNjcmlwdHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b> <a href="/Array Function/">Array Function</a></b></h4>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1592609931095-54a2168ae893?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8amF2YXNjcmlwdHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b> <a href="/String Function/">String Functions</a></b></h4>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvZGV8ZW58MHx8MHx8fDA%3D"
+            alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b> <a href="/Regular Expression/">Regular Expressions (Regex)</a></b></h4>
+        </div>
+    </div>
     <script>
         function updatemenu() {
             if (document.getElementById("responsive-menu").checked == true) {
