@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			form {
+				padding: 30px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+
+			label {
+				display: block;
+				margin-bottom: 5px;
+				font-weight: bold;
+			}
+
+			input[type="password"] {
+				width: 100%;
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				margin-bottom: 10px;
+			}
+
+			#error-message {
+				color: red;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+
+			button[type="button"] {
+				background-color: #4caf50;
+				color: white;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			input[type="reset"] {
+				background-color: #af4c4c;
+				color: white;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.create-password-link {
+				display: block;
+				margin-top: 10px;
+				text-decoration: none;
+				color: #007bff;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			.create-password-link:hover {
+				text-decoration: underline;
+			}
+		</style>
+		<title>Document</title>
+	</head>
+	<body>
+		<form>
+			<label for="password-input">Enter password:</label>
+			<input type="password" id="password-input" />
+			<span id="error-message"></span>
+			<br />
+			<button type="button" id="submit-button">Submit</button>
+			<input type="reset" />
+		</form>
+		<a
+			href="https://passwords-gen.vercel.app/"
+			target="_blank"
+			class="create-password-link"
+		>
+			👉 Create Strong Password</a
+		>
+
+		<script src="/Regular Expression/Password Strength/script.js"></script>
+	</body>
+</html>

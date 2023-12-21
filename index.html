@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        #menu {
+            background: #0099cc;
+            background: linear-gradient(to bottom, #0000cc, #08ff8c);
+            height: 45px;
+            border-radius: 10px;
+        }
+
+        #menu ul,
+        #menu li {
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+        }
+
+        #menu ul {
+            width: 100%;
+            text-align: center;
+        }
+
+        #menu li {
+            display: inline-block;
+            position: relative;
+        }
+
+        #menu a {
+            display: block;
+            line-height: 45px;
+            padding: 0 14px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        #menu a.dropdown-arrow:after {
+            content: "\25BE";
+            margin-left: 5px;
+        }
+
+        #menu li a:hover {
+            color: #0099cc;
+            background: #f2f2f2;
+        }
+
+        #menu input {
+            display: none;
+            margin: 0;
+            padding: 0;
+            height: 45px;
+            width: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        #menu label {
+            display: none;
+            line-height: 45px;
+            text-align: center;
+            position: absolute;
+            left: 35px;
+        }
+
+        #menu label:before {
+            font-size: 1.6em;
+            color: #ffffff;
+            content: "\2261";
+            margin-left: 20px;
+        }
+
+        #menu ul.sub-menus {
+            height: auto;
+            overflow: hidden;
+            width: 170px;
+            background: #444444;
+            position: absolute;
+            z-index: 99;
+            display: none;
+        }
+
+        #menu ul.sub-menus li {
+            display: block;
+            text-align: left;
+            width: 100%;
+        }
+
+        #menu ul.sub-menus a {
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        #menu li:hover ul.sub-menus {
+            display: block;
+        }
+
+        #menu ul.sub-menus a:hover {
+            background: #f2f2f2;
+            color: #444444;
+        }
+
+        @media screen and (max-width: 800px) {
+            #menu {
+                position: relative;
+            }
+
+            #menu ul {
+                background: #444444;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: 0;
+                z-index: 3;
+                height: auto;
+                display: none;
+                text-align: left;
+            }
+
+            #menu ul.sub-menus {
+                width: 100%;
+                position: static;
+            }
+
+            #menu ul.sub-menus a {
+                padding-left: 30px;
+            }
+
+            #menu li {
+                display: block;
+                float: none;
+                width: auto;
+            }
+
+            #menu input,
+            #menu label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+            }
+
+            #menu input {
+                z-index: 4;
+            }
+
+            #menu input:checked+label {
+                color: #ffffff;
+            }
+
+            #menu input:checked+label:before {
+                content: "\00d7";
+            }
+
+            #menu input:checked~ul {
+                display: block;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="menu">
+        <input type="checkbox" id="responsive-menu" onclick="updatemenu()" /><label></label>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li>
+                <a class="dropdown-arrow" href="/">Array Functions</a>
+                <ul class="sub-menus">
+                    <li>
+                        <a href="/Array Function/1-Sum of Array/index.html">1-Sum of Array </a>
+                    </li>
+                    <li><a href="/Array Function/2-Filter odd Number/index.html">2-Filter odd Number</a></li>
+                    <li><a href="/Array Function/3-Map to Double/script.js">3-Map to Double</a></li>
+                    <li><a href="/Array Function/4-Find Max/index.html">4-Find Max Value</a></li>
+                    <li><a href="/Array Function/5-Remove Duplicates/index.html">5-Remove Duplicates</a></li>
+                    <li><a href="/Array Function/6-Find Even/index.html">6-Find Even</a></li>
+                    <li><a href="/Array Function/7-Calc Average/index.html">7-Calc Average</a></li>
+                    <li><a href="/Array Function/8-All Positive/index.html">8-All Positive</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="dropdown-arrow" href="/">String Functions</a>
+                <ul class="sub-menus">
+                    <li>
+                        <a href="/String Function/1-Reverse String/index.html">1-Sum of Array </a>
+                    </li>
+                    <li><a href="/String Function/2-Count Vowels/index.html">2-Filter odd Number</a></li>
+                    <li><a href="/String Function/3-Capitlize First Letter/index.html">3-Map to Double</a></li>
+                    <li><a href="/String Function/4-Substring Check/index.html">4-Find Max Value</a></li>
+                    <li><a href="/String Function/5-Count Words/index.html">5-Remove Duplicates</a></li>
+                    <li><a href="/String Function/6-Replace Substring/index.html">6-Find Even</a></li>
+                    <li><a href="/String Function/7-Trim Spaces/index.html">7-Calc Average</a></li>
+                    <li><a href="/String Function/8-Convert to Title Case/index.html">8-All Positive</a></li>
+                </ul>
+            </li>
+
+            <li><a href="https://github.com/shrey890/JS-3-close-digit" target="_blank">Repositories</a></li>
+        </ul>
+    </nav>
+    <script>
+        function updatemenu() {
+            if (document.getElementById("responsive-menu").checked == true) {
+                document.getElementById("menu").style.borderBottomRightRadius = "0";
+                document.getElementById("menu").style.borderBottomLeftRadius = "0";
+            } else {
+                document.getElementById("menu").style.borderRadius = "10px";
+            }
+        }
+    </script>
+</body>
+
+</html>
